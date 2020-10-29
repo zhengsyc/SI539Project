@@ -1,0 +1,222 @@
+body{
+  font-family: 'Raleway', sans-serif; /* Test for this*/
+  margin: 0;
+  padding: 0;
+  font-size: 16pt; /* test for this! Make all sizes em or rem */
+  background-image: url('../images/concrete_seamless.png');
+}
+
+h1{
+  font-size: 2em;
+  text-align: center;
+  line-height: 2;
+}
+
+h2{
+  font-size: 1.5em;
+  text-align: center;
+  padding: 5px;
+}
+
+p {
+  padding-top: 20px;
+  padding-bottom: 20px;
+/*  padding-left: 10px;
+  padding-right: 10px;*/
+  text-align: left;
+}
+
+a {
+  text-decoration: none;
+}
+
+.my_container {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.about_me {
+  text-align: left;
+  background-color: #E0FFFF;
+}
+
+.about_me h1 {
+  text-align: left;
+}
+
+* {box-sizing: border-box;}
+.my_disp_row .my_disp_col{
+  float: left;
+  width: 25%;
+}
+
+.slides {
+  text-align: right;
+  background-color: #F0FFF0;
+}
+
+.slides h1 {
+  text-align: right;
+}
+
+.slides h2 {
+  text-align: right;
+}
+
+.slides p {
+  text-align: right;
+}
+
+.gallery {
+  text-align: left;
+  background-color: #E0FFFF;
+}
+
+.gallery h1 {
+  text-align: left;
+}
+
+.gallery p {
+  text-align: left; 
+}
+
+.my_slides {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.my_slides_hov {
+  position: relative;
+  top: 0px;
+  left: 0px;
+}
+
+.my_slides_change {
+  display: block;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  opacity: 0;
+}
+
+.my_slides_change:hover {
+  opacity: 0.6;
+  cursor: pointer;
+}
+
+footer{
+  background-color: black;
+  color: white;
+  padding: 30px;
+  text-align: center;
+}
+
+table{
+  margin: auto;
+}
+
+/* Navbar */
+header{
+  background: #fff;
+  border-bottom: 3px solid #50C7C7;
+  /*Your  code here again.*/
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.nav_links{
+  /*Your code here again.*/
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  list-style: none;
+}
+
+.nav_item a{
+  color: black;
+  text-decoration: none;
+}
+
+.nav_item a:hover, a:focus{
+  color: #50C7C7;
+  text-decoration: underline;
+  -webkit-text-decoration-style: dotted;
+          text-decoration-style: dotted;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+@media screen and (min-width: 850px){
+  /* Cards! */
+  .card {
+    /*Your  code here again.*/
+    flex-basis: 225px;
+  }
+
+  .card_big{
+    -webkit-transform: scaleX(1.12);
+            transform: scaleX(1.12);
+  }
+
+  /* Navbar */
+  header{
+    /*Your code here again.*/  
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .nav_links{
+    /*Your code here again.*/  
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .nav_item a{
+    padding: 10px;
+  }
+}
+
+@media (max-width: 800px) {
+    .column {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+@media (max-width: 600px) {
+  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+
+/*Your code here again.*/ 
+/*Add media query to handle reduced-motion*/
+
+@media (prefers-reduced-motion: reduce) {
+  #logo {
+    animation: none;
+  }
+}
+
+

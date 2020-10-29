@@ -1,0 +1,179 @@
+a {
+  text-decoration: none;
+}
+
+.my_container {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.my_title_0000 {
+  font-family: Arial, sans-serif;
+  font-size: 24px;
+  color: #000;
+  padding: 0px;
+}
+
+.my_title_0001 {
+  font-family: Arial, sans-serif;
+  font-size: 36px;
+  color: #000;
+  letter-spacing:4px
+}
+
+.my_bar_0000 {
+  padding:8px 16px;
+  background-color: #696;
+  width: auto;
+}
+
+.my_bar_0001 {
+  padding:0px 0px;
+  background-color: #F0FFF0;
+  width: auto;
+  align: center;
+}
+
+.my_bar_0002 {
+  margin: 0 auto; 
+  width: 480px;
+}
+
+.my_bar_0003 {
+  margin: 0 auto; 
+  width: 800px;
+}
+
+.my_bar_0004 {
+  float: left;
+  margin: 0; 
+}
+
+.my_button {
+  font-family: Arial, sans-serif;
+  font-size: 24px;
+  color: #fff;
+}
+
+.my_button:hover {
+  font-family: Arial, sans-serif;
+  font-size: 24px;
+  color: #fff;
+  background-color: #548B54;
+}
+
+.my_left {
+  float: left;
+  padding:8px 16px;
+}
+
+.my_right {
+  float: right;
+  padding:8px 16px;
+}
+
+.my_card {
+  box-shadow:0 2px 5px 0  rgba(0,0,0,0.16),
+  0 2px 10px 0 rgba(0,0,0,0.12)
+}
+
+.my_container {
+  padding:0px 0px;
+  width: auto;
+}
+
+.my_paragraph_0000 {
+  text-align: center;
+  line-height: 36px;
+}
+
+.my_paragraph_0001 {
+  font-family: Arial, sans-serif;
+  font-size: 12px;
+  text-align: left;
+  line-height: 36px;
+}
+
+* {box-sizing: border-box;}
+.my_disp_row .my_disp_col{
+  float: left;
+  width: 25%;
+}
+
+.my_slides {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.my_slides_hov {
+  position: relative;
+  top: 0px;
+  left: 0px;
+}
+
+.my_slides_change {
+  display: block;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  opacity: 0;
+}
+
+.my_slides_change:hover {
+  opacity: 0.6;
+  cursor: pointer;
+}
+
+#btn,#btn0:hover {
+  cursor: pointer;
+}
+
+#content {
+  display: none;
+}
+
+#show:target #content {
+  display: block;
+}
+
+#show:target #open {
+  display: none;
+}
+
+#myInput {
+    background-image: url('https://static.runoob.com/images/mix/searchicon.png'); /* 搜索按钮 */
+    background-position: 10px 12px; /* 定位搜索按钮 */
+    background-repeat: no-repeat; /* 不重复图片*/
+    width: 100%; 
+    font-size: 16px; /* 加大字体 */
+    padding: 12px 20px 12px 40px; 
+    border: 1px solid #ddd; 
+    margin-bottom: 12px; 
+}
+
+#myUL {
+    /* 移除默认的列表样式 */
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+#myUL li a {
+    border: 1px solid #ddd; /* 链接添加边框 */
+    margin-top: -1px; 
+    background-color: #f6f6f6; 
+    padding: 12px; 
+    text-decoration: none;
+    font-size: 18px; 
+    color: black; 
+    display: block; 
+}
+
+#myUL li a.header {
+    background-color: #e2e2e2; 
+    cursor: default; 
+}
+
+#myUL li a:hover:not(.header) {
+    background-color: #eee;
+}
