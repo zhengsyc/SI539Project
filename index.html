@@ -15,8 +15,15 @@
       	<img src="images/title.jpg" alt="logo" id = "logo">
       	<nav>
 	        <ul class="nav_links">
-	          <li class="nav_item"><a href="HomePage.html">HOME</a></li>
-	          <li class="nav_item"><a href="Gallery.html">GALLERY</a></li>
+	          <li class="nav_item nav_this"><a href="HomePage.html">HOME</a></li>
+	          <li class="nav_item"><a href="Gallery.html">GALLERY</a>
+	          	<ul>
+	          		<li class="nav_item"><a href="Gallery_campo.html">Grassland</a></li>
+	          		<li class="nav_item"><a href="Gallery_spain.html">Spain</a></li>
+	          		<li class="nav_item"><a href="Gallery_suzhou.html">Suzhou</a></li>
+	          		<li class="nav_item"><a href="Gallery_xiamen.html">Xiamen</a></li>
+	          	</ul>
+	          </li>
 	          <!-- <li class="nav_item"><a href="Essay.html">ESSAY</a></li> -->
 	  		  <li class="nav_item"><a href="Reference.html">REFERENCE</a></li>
 	  		  <li class="nav_item"><a href="Contact.html">CONTACT</a></li>
@@ -110,22 +117,6 @@
 	  	if (myIndex > x.length) {myIndex = 1}
 	  	x[myIndex-1].style.display = "block";
 	  	setTimeout(carousel, 3000);
-		}
-	</script>
-	<script type="text/javascript">
-		window.onload = function () {
-			var content = document.getElementById("content0");
-			var btn = document.getElementById("btn0");
-			var str = content.innerHTML;
-			var onOff = true;
-			btn.onclick = function () {
-				if (onOff) {
-					content.innerHTML = "";
-				} else {
-					content.innerHTML = str.substring(0);
-				}
-				onOff = !onOff;
-			}
 		}
 	</script>
 </body>

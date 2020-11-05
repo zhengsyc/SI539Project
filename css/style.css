@@ -30,6 +30,66 @@ a {
   text-decoration: none;
 }
 
+form {
+  width: 100%;
+  padding: 20px;
+  background: #fff;
+  box-shadow: 0 2px 5px #ccc; 
+}
+
+.contactbox {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: inherit;
+  margin:0 auto;
+  padding: 3px;
+}
+
+input {
+  width: calc(100% - 10px);
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  vertical-align: middle;
+}
+
+input:hover, textarea:hover {
+  outline: none;
+  border: 1px solid #095484;
+}
+
+span {
+  color: red;
+}
+
+textarea {
+  width: calc(100% - 6px);
+}
+
+.btn-block {
+  margin-top: 20px;
+  text-align: center;
+}
+
+button {
+  width: 150px;
+  padding: 10px;
+  border: none;
+  -webkit-border-radius: 5px; 
+  -moz-border-radius: 5px; 
+  border-radius: 5px; 
+  background-color: #095484;
+  font-size: 16px;
+  color: #fff;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0666a3;
+}
+
 .my_container {
   padding-top: 40px;
   padding-bottom: 40px;
@@ -146,6 +206,14 @@ header{
   -webkit-text-decoration-style: dotted;
           text-decoration-style: dotted;
 }
+
+.nav_this {
+  border: 3px solid Highlight;
+}
+
+nav li:hover>ul{display:block;}
+
+nav>ul>li ul{display:none;float:left; background-color:#fff; border:1px solid Highlight; position:absolute;}
 
 .row {
   display: flex;
