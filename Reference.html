@@ -15,21 +15,76 @@
       	<img src="images/title.jpg" alt="logo" id = "logo">
       	<nav>
 	        <ul class="nav_links">
-	          <li class="nav_item"><a href="index.html">HOME</a></li>
-	          <li class="nav_item"><a href="Gallery.html">GALLERY</a>
+	          <li class="nav_item button_item"><a href="index.html">HOME</a></li>
+	          <li class="nav_item button_item"><a href="Gallery.html">GALLERY</a>
 	          	<ul>
-	          		<li class="nav_item"><a href="Gallery/Gallery_campo.html">Grassland</a></li>
-	          		<li class="nav_item"><a href="Gallery/Gallery_spain.html">Spain</a></li>
-	          		<li class="nav_item"><a href="Gallery/Gallery_suzhou.html">Suzhou</a></li>
-	          		<li class="nav_item"><a href="Gallery/Gallery_xiamen.html">Xiamen</a></li>
+	          		<li class="nav_item button_item"><a href="Gallery/Gallery_campo.html">Grassland</a></li>
+	          		<li class="nav_item button_item"><a href="Gallery/Gallery_spain.html">Spain</a></li>
+	          		<li class="nav_item button_item"><a href="Gallery/Gallery_suzhou.html">Suzhou</a></li>
+	          		<li class="nav_item button_item"><a href="Gallery/Gallery_xiamen.html">Xiamen</a></li>
 	          	</ul>
 	          </li>
 	          <!-- <li class="nav_item"><a href="Essay.html">ESSAY</a></li> -->
-	  		  <li class="nav_item nav_this"><a href="Reference.html">REFERENCE</a></li>
-	  		  <li class="nav_item"><a href="Contact.html">CONTACT</a></li>
+	  		  <li class="nav_item nav_this button_item"><a href="Reference.html">EXPERIENCE</a></li>
+	  		  <li class="nav_item button_item"><a href="Contact.html">CONTACT</a></li>
 	        </ul>
     	</nav>
   	</header>	
+
+  	<main>
+  		<h1>My Projects</h1>
+  		<div class="grid-container-project">
+  			<div class="p1-title">Dispatching and Repositioning System on a Ride-hailing Application (Didi)</div>
+  			<div class="p1-content">
+  				<ul>
+  					<li> Objective: Aimed at optimizing the efficiency of an online ride-hailing application (Didi) by shortening users' waiting time
+							and drivers' pick-up time, to improve the cumulative income of the platform.</li>
+					<li> Environment Setup: Built a grid-based simulator, to score different models by the adjusted rewards within a time period.</li>
+					<li> Model Improvements: Based on the Mean-Field Deep Q Learning algorithm, designed a more stable and efficient
+							Reinforcement Learning algorithm, which is capable of handling large scale input data, to meet dynamic traffic situations,
+							and tuned parameters for this model by experiments.</li>
+					<li> Performance: Beated the best baseline (Markov Decision Process Model) by 7% after the model converged.</li>
+  				</ul>
+  			</div>
+
+  			<div class="p2-title">AR Lego Bricks Simulator Using Unity</div>
+  			<div class="p2-content">
+  				<ul>
+  					<li> Objective: Using Unity, aimed at building an AR Lego Bricks Simulator where users can create their own Lego architectures
+							by dragging different bricks on their smartphones.</li>
+					<li> Bricks Construction: Set cube templates as brick prefabs, and added collider and physics attributes for them.</li>
+					<li> Function Implementation: Worked on C# functions, which enable users to place, move, delete, group, ungroup or
+							duplicate one or multiple bricks by tapping buttons or entering command lines.</li>
+					<li> Interface Design: Designed a friendly user interface and linked above functions to corresponding gestures.</li>
+  				</ul>
+  			</div>
+
+  			<div class="p3-title">Neural Humor Generator Using RNN Model</div>
+  			<div class="p3-content">
+  				<ul>
+  					<li> Objective: Aimed at building a deep model that is able to generate humors automatically.</li>
+					<li> Dataset Preparation: Clawed short humors (Conan talk show sentences) from teamcoco and wocka, and cleaned them. For
+							each short humor, set its pro-nouns set as its feature.</li>
+					<li> Model Setup: Applied RNN in Encoder and Decoder, and introduced Attention mechanism among them.</li>
+					<li> Training and Prediction Mechanism: Fed in features as input to the encoder, and aimed at obtaining the original humors
+							word by word. Prediction is finished by providing random combinations of pro-nouns. The meaningful rate is around 11%.</li>
+  				</ul>
+  			</div>
+
+  			<div class="p4-title">Musical Tastes Based Online Friend-Matching System</div>
+  			<div class="p4-content">
+  				<ul>
+  					<li> Objective: Aimed at building a friend-matching system based on personal musical tastes.</li>
+					<li> Core Algorithm: For a fixed group of users, extracted their favorite songs. For each song, collected all of its comments, and
+							transferred high-frequency words into tf 􀀀 idf maxtrix as its feature. For each user, viewed his/her feature as an average of
+							all related song features. Considered the Manhattan distance among users as the user difference distances. A small difference
+							distance of two users indicates a high similarity between them.</li>
+					<li> Web-page Design: Built up the web app. Linked the database to the back-end using Flask, and accordingly set up a
+							friendly front-end, which allowed a user to log in and match friends.</li>
+  				</ul>
+  			</div>
+  		</div>
+  	</main>
 
   	<footer>
 			Tel: +86-16601835756<br>
