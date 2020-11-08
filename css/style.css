@@ -37,7 +37,7 @@ form {
 }
 
 .contactbox {
-  width: 50%;
+  width: 80%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -431,6 +431,16 @@ nav>ul>li ul{display:none;float:left; background-color:#fff; border:1px solid Hi
   .nav_item a{
     padding: 10px;
   }
+
+  .contactbox {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: inherit;
+  margin:0 auto;
+  padding: 3px;
+}
 }
 
 @media (max-width: 800px) {
@@ -451,6 +461,16 @@ nav>ul>li ul{display:none;float:left; background-color:#fff; border:1px solid Hi
   .grid-container img {
   width: 150px;
   height: 150px;
+}
+
+.contactbox {
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: inherit;
+  margin:0 auto;
+  padding: 3px;
 }
 
 /*  .slides_container img {
@@ -477,6 +497,16 @@ nav>ul>li ul{display:none;float:left; background-color:#fff; border:1px solid Hi
 .grid-container img {
   width: 100px;
   height: 100px;
+}
+
+.contactbox {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: inherit;
+  margin:0 auto;
+  padding: 3px;
 }
 
 /*  .slides_container img {
