@@ -176,6 +176,64 @@ table{
   margin: auto;
 }
 
+.flipcard {
+  background-color: transparent;
+  width: 300px;
+  height: 300px;
+  perspective: 1000px;
+  justify-content: center;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  margin: 0 auto;
+}
+
+.cardflip {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 1s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.flipcard:hover .cardflip {
+  transform: rotateY(180deg);
+}
+
+.flipcard:focus .cardflip {
+  transform: rotateY(180deg);
+}
+
+.front, .back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  border-radius: 5px;
+}
+
+.front {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #292970;
+  color: white;
+  font-size: 35px;
+  font-weight: bold;
+  font-family: "Comic Sans MS";
+  /* text-decoration: underline; */
+}
+
+.back {
+  transform: rotateY(180deg);
+}
+
+.back img {
+  width: 200px;
+  height: 200px;
+}
 .grid-container {
   display: grid;
   grid-template-columns: auto auto auto auto;
@@ -191,97 +249,94 @@ table{
   height: 200px;
 }
 
-.grid-container-project {
-  display: grid;
-  /*width: 1200px;*/
-  grid-template-columns: auto auto auto auto;
-  grid-template-rows: auto auto auto auto;
-  background-color: #ccffcc;
-  grid-row-gap: 40px;
-  grid-column-gap: 10px;
-  /*padding: 20px 20px 20px 20px;*/
-  align-content: center;
-  margin: auto;
+
+.container{
+  /*Your Code Here*/
+  display: grid;    
+  grid-template-columns: 1fr 5fr 1fr;
+  grid-template-rows: repeat(5, auto);
+  grid-row-gap: 15px;
 }
 
-.p1-title {
-  grid-area: 1 / 1 / span 1 / span 1;
-  display: flex;
-  align-items: center;
+.main {
+  background-attachment: fixed; /* Parallax effect */     
+  background-position: center;  /* Parallax effect */
+  background-repeat: no-repeat; /* Parallax effect */
+  background-size: cover;       /* Parallax effect */
+  color: white;
+  height: 400px;                /* Parallax effect */
+
+  /*Your Code Here*/
+  /*Set background-image to header.jpg */
+  background-image: url("../images/divide.jpg");
+ 
+
+  grid-column: 1 / -1;  /*Can you explain what this does?*/
+  grid-row: 1 / auto;   /*Can you rewrite it?*/
+}
+
+.main p{
+  color: white;
+  font-size: 24px;
+  padding: 0 100px;
   text-align: center;
-  font-size: 30px;
-  background: #DDDDDD;
 }
 
-.p2-title {
-  grid-area: 2 / 4 / span 1 / span 1;
-  display: flex;
-  align-items: center;
-  text-align: center;
-  font-size: 30px;
-  background: #DDDDDD;
+
+.about, .method, .clients, .contact{
+  /*Your Code Here*/
+  grid-column: 2 / span 1;
+
 }
 
-.p3-title {
-  grid-area: 3 / 1 / span 1 / span 1;
-  display: flex;
-  align-items: center;
-  text-align: center;
-  font-size: 30px;
-  background: #DDDDDD;
+.about-image, .method-image, .clients-image, .contact-image{
+  /*Your Code Here*/
+  grid-column: 1 / -1; 
+  max-height: 700px;
+  overflow: hidden;
 }
 
-.p4-title {
-  grid-area: 4 / 4 / span 1 / span 1;
-  display: flex;
-  align-items: center;
-  text-align: center;
-  font-size: 30px;
-  background: #DDDDDD;
+.about, .about-image{
+   /*Your Code Here*/
+   grid-row: 2 / span 1;
+
 }
 
-.p1-content {
-  grid-area: 1 / 2 / span 1 / span 3;
-  display: flex;
-  align-items: center;
-  padding-left: 10px;
-  font-size: 18px;
+.method, .method-image{
+   /*Your Code Here*/
+   grid-row: 3 / span 1;
+
+}
+
+
+.clients, .clients-image{
+    /*Your Code Here*/
+    grid-row: 4 / span 1;
+
+}
+
+
+.contact, .contact-image{
+    /*Your Code Here*/
+    grid-row: 5 / span 1;
+
+}
+
+.text-block{
+  background-color: rgba(255, 255, 255, .8);
+  border: 10px solid black;
+  padding: 30px;
+  /*Your code here:*/
+  align-self: center;
+  justify-self: center;
+
+}
+
+
+.text-block h2 {
+  font-size: 32px;
+  line-height: 1.5;
   text-align: left;
-  min-height: 200px;
-  background-color: #ffffcc;
-}
-
-.p2-content {
-  grid-area: 2 / 1 / span 1 / span 3;
-  display: flex;
-  align-items: center;
-  padding-left: 10px;
-  font-size: 18px;
-  text-align: left;
-  min-height: 200px;
-  background-color: #ffcccc;
-}
-
-.p3-content {
-  grid-area: 3 / 2 / span 1 / span 3;
-  display: flex;
-  align-items: center;
-  padding-left: 10px;
-  font-size: 18px;
-  text-align: left;
-  min-height: 200px;
-  background-color: #e6ccff;
-}
-
-.p4-content {
-  grid-area: 4 / 1 / span 1 / span 3;
-  display: flex;
-  align-items: center;
-  padding-left: 10px;
-  font-size: 18px;
-  text-align: left;
-  min-height: 200px;
-  background-color: #e6f9ff;
 }
 
 /* Navbar */
@@ -402,6 +457,31 @@ nav>ul>li ul{display:none;float:left; background-color:#fff; border:1px solid Hi
   max-width: 100%;
   max-height: 100%;
 }
+
+@media all and (min-width: 800px){
+  nav{
+    padding: 30px 0px;
+
+    text-align: right;
+  }
+
+  .container{
+
+    display: grid;  
+    grid-template-columns: 50px auto 500px auto 50px;
+    grid-template-rows: repeat(5, 400px);
+  }
+
+  .about, .clients, .method-image, .contact-image{
+
+    grid-column: 3 / span 2;
+  }
+
+  .about-image, .clients-image, .method, .contact{
+
+    grid-column: 2 / span 2;
+  }
+} 
 
 @media screen and (min-width: 850px){
   /* Cards! */
