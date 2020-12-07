@@ -93,6 +93,25 @@ button:hover {
   background-color: #0666a3;
 }
 
+.skip a{
+  background: white;
+  left: 0;
+  padding: 6px;
+  -webkit-transition: top 1s ease-out;
+  transition: top 1s ease-out;
+  z-index: 1;
+  position: absolute;
+  top: -40px;
+  /*Your code here*/
+}
+
+/*Your Code Here*/
+/*Write selector/rule property to position the skip class element*/
+.skip a:focus{
+  position: absolute;
+  top: 0;
+}
+
 .my_container {
   padding-top: 40px;
   padding-bottom: 40px;
@@ -338,7 +357,7 @@ table{
 
 .text-block{
   background-color: rgba(255, 255, 255, .8);
-  border: 10px solid black;
+  border: 10px dotted #2d2d86;
   padding: 30px;
   /*Your code here:*/
   align-self: center;
@@ -351,6 +370,7 @@ table{
   font-size: 32px;
   line-height: 1.5;
   text-align: left;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .citations {
@@ -457,6 +477,11 @@ nav>ul>li ul{display:none;float:left; background-color:#fff; border:1px solid Hi
   padding-right: 10px;
   padding-top: 10px;
   padding-bottom: 10px;
+}
+
+.row img:hover {
+  opacity: 0.8;
+  border: 5px solid yellow;
 }
 
 /* Create four equal columns that sits next to each other */
@@ -626,6 +651,15 @@ nav>ul>li ul{display:none;float:left; background-color:#fff; border:1px solid Hi
   #logo {
     animation: none;
   }
+
+  html{
+      scroll-behavior: auto; 
+  }
+
+  .skip a{
+    -webkit-transition: none; 
+    transition: none;       
+   }
 }
 
 
