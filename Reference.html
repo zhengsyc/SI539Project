@@ -10,6 +10,9 @@
     <link href="https://fonts.googleapis.com/css?family=Raleway:200&display=swap" rel="stylesheet">
 </head>
 <body>
+	<div class="skip_to_content">
+    <a href="#main"><img src="images/skip_content.gif" alt="skip_to_mian"></a>
+  </div>
 	<!-- Top short card -->
 	<header>
       	<img src="images/title.jpg" alt="zhengsyclogo" id = "logo">
@@ -31,16 +34,16 @@
     	</nav>
   	</header>	
 
-<main class="container">
+<main class="container" id="main">
       
-    <div class="main" id="main">
+    <div class="main">
       <h1>New Company Inc.</h1>
       <p>Creating a better workspace by transforming the office paradigm. We're helping employees make their mark on the world through effictive workspace management.</p>
     </div>
     
-<!--     <div class="about-image">
-      <img src="images/p1_title.png" alt=""/>
-    </div> -->
+    <div class="about-image">
+      <img src="images/project1.jpg" alt=""/>
+    </div>
     
     <div class="about text-block">
       <a id="about"></a>
@@ -48,9 +51,9 @@
       <p>This project is Aimed at optimizing the efficiency of an online ride-hailing application (Didi) by shortening users' waiting time and drivers' pick-up time, to improve the cumulative income of the platform. We built a grid-based simulator, to score different models by the adjusted rewards within a time period. The model is based on the Mean-Field Deep Q Learning algorithm, designed a more stable and efficient Reinforcement Learning algorithm, which is capable of handling large scale input data, to meet dynamic traffic situations, and tuned parameters for this model by experiments.</p>
     </div>
 
-<!--     <div class="method-image">
-      <img src="images/p2_title.jpg" alt=""/>
-    </div> -->
+    <div class="method-image">
+      <img src="images/project2.jpg" alt=""/>
+    </div>
 
     <div class="method text-block">
       <a id="method"></a>
@@ -58,9 +61,9 @@
       <p>Using Unity, aimed at building an AR Lego Bricks Simulator where users can create their own Lego architectures by dragging different bricks on their smartphones. Set cube templates as brick prefabs, and added collider and physics attributes for them. Worked on C# functions, which enable users to place, move, delete, group, ungroup or duplicate one or multiple bricks by tapping buttons or entering command lines.</p>
     </div>
 
-    <!-- <div class="clients-image">
-      <img src="images/clients.jpg" alt=""/>
-    </div> -->
+    <div class="clients-image">
+      <img src="images/project3.jpg" alt=""/>
+    </div>
 
     <div class="clients text-block">
       <a id="clients"></a>
@@ -68,16 +71,26 @@
       <p>Aimed at building a deep model that is able to generate humors automatically. Clawed short humors (Conan talk show sentences) from teamcoco and wocka, and cleaned them. For each short humor, set its pro-nouns set as its feature. Applied RNN in Encoder and Decoder, and introduced Attention mechanism among them. Fed in features as input to the encoder, and aimed at obtaining the original humors word by word. Prediction is finished by providing random combinations of pro-nouns. The meaningful rate is around 11%.</p>
     </div>
 
-    <!-- <div class="contact-image">
-      <img src="images/contact.jpg" alt =""/>
-    </div> -->
+    <div class="contact-image">
+      <img src="images/project4.jpg" alt =""/>
+    </div>
 
     <div class="contact text-block">
       <a id="contact"></a>
       <h2>Friend Recommendation System</h2>
       <p>Aimed at building a friend-matching system based on personal musical tastes.For a fixed group of users, extracted their favorite songs. For each song, collected all of its comments, and transferred high-frequency words into tf-idf maxtrix as its feature. For each user, viewed his/her feature as an average of all related song features. Considered the Manhattan distance among users as the user difference distances. A small difference distance of two users indicates a high similarity between them.</p>
     </div>
+
+    
 </main>
+<div class="citations">
+	<p>Image Citation</p>
+	<p><cite>The Taxi</cite> from https://www.usatoday.com/story/travel/roadwarriorvoices/2016/06/07/taxi-cab-scam/32649337/</p>
+	<p><cite>Lego</cite> from http://www.climaxstudios.com/lego-ar-studio/</p>
+	<p><cite>Talk Show</cite> from https://www.mentalfloss.com/article/75475/why-do-late-night-talk-shows-start-1135-pm</p>
+	<p><cite>Friend</cite> from https://www.huffingtonpost.ca/jeanpaul-bedard/being-there-for-our-children_b_9577068.html</p>
+</div>
+
   	<footer>
 			Tel: +86-16601835756<br>
 			Email: zhengsyc@umich.edu
